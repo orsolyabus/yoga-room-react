@@ -27,3 +27,12 @@ A. User is a potential student
   5. logged in user saves a search
   6. logged in user re-visits a saved search
 
+B. User is a teacher
+  1. visits the site when not logged in
+    * arrives to landing page
+    * clicks log in
+    * modal with login form pops up
+    * after successful login arrives to her profile page
+  2. visits when logged in
+    * arrives directly to her profile page
+  3. 
