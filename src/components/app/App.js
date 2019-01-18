@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import LandingPage from '../Landing/LandingPage'
-import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
+// import './App.css';
 import NavBar from './NavBar';
+import { BrowserRouter, Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          < NavBar />
-        </header>
-        < LandingPage />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div className="App">
+      < NavBar />
+      < Route path="/" exact component={LandingPage} />
+    </div>
+  </BrowserRouter>
+);
+
 
 export default App;
