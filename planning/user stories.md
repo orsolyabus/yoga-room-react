@@ -10,8 +10,8 @@ A. User is a potential student
 
   2.  new user tries to save a class as interesting
     * modal pops up
-      * gets a prompt to log in / sign up
-      * sign up form appears
+      * gets a prompt to log in / sign up, clicks sign up
+      * sign up form appears in the same modal
       * fills sign up information 
       * saves,  
       * prompt: Do you want to visit your profile page?
@@ -21,11 +21,12 @@ A. User is a potential student
     * clicks [Interested]
     * class saved to his list of interesting classes (listed on profile page)
   
-  3. logged in user signs up to a class
-  4. logged in user send a teacher a question
+  3. returning user  
+  4. logged in user signs up to a class
+  5. logged in user send a teacher a question
 
-  5. logged in user saves a search
-  6. logged in user re-visits a saved search
+  6. logged in user saves a search
+  7. logged in user re-visits a saved search
 
 B. User is a teacher
   1. visits the site when not logged in
