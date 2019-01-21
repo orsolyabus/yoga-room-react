@@ -5,9 +5,9 @@ import BlogFeed from './BlogFeed';
 
 const LandingPage = () => (
   <main className="LandingPage">
-    < LandingWelcome />
-    < LandingClasses />
-    < BlogFeed />
+    <LandingWelcome />
+    <LandingClasses />
+    <BlogFeed />
   </main>
 );
 
