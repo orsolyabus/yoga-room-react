@@ -12,9 +12,6 @@ const NavBar = () => (
     <MDBCollapse id="navbarCollapse3" isOpen={true} navbar>
       <MDBNavbarNav left className="white-text">
         <MDBNavItem>
-          <MDBNavLink exact to="/">Welcome</MDBNavLink>
-        </MDBNavItem>
-        <MDBNavItem>
           <MDBNavLink exact to="/search">Detailed Search</MDBNavLink>
         </MDBNavItem>
         <MDBNavItem>
