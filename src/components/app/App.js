@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LandingPage from '../Landing/LandingPage';
 import SearchPage from '../Search/SearchPage';
+import AccountPage from '../Account/AccountPage';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
@@ -14,6 +15,7 @@ const App = () => (
       <NavBar />
       <Route path="/" exact component={LandingPage} />
       <Route path="/search" exact component={SearchPage} />
+      <Route path="/account" exact component={AccountPage} />
     </div>
   </BrowserRouter>
 );
