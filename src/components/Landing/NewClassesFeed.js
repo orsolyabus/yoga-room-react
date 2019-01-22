@@ -1,12 +1,15 @@
 // i18n
 import React from 'react';
+import { MDBCard, MDBListGroupItem, MDBListGroup } from "mdbreact";
 
 const NewClassesFeed = () => (
-  <div className="NewClassesFeed">
-    <ul>
-      <li>New class 1 </li>
-      <li>New class 2 </li>
-    </ul>
+  <div className="NewClassesFeed col-4">
+    <MDBCard>
+      <MDBListGroup>
+        <MDBListGroupItem>New class 1 </MDBListGroupItem>
+        <MDBListGroupItem>New class 2 </MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
   </div>
 );
 

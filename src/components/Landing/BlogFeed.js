@@ -1,13 +1,32 @@
 // i18n
 import React from 'react';
+import { MDBContainer, MDBCard, MDBCardBody, MDBCardGroup } from "mdbreact";
 
 const BlogFeed = () => (
-  <div className="BlogFeed">
-    <ul>
-      <li>Blog post 1 </li>
-      <li>Blog post 2 </li>
-    </ul>
-  </div>
+  <MDBContainer fluid className="BlogFeed p-4">
+    <MDBCardGroup  deck> 
+      <MDBCard >
+        <MDBCardBody>
+          Blog post 1
+        </MDBCardBody>
+      </MDBCard>
+      <MDBCard >
+        <MDBCardBody>
+          Blog post 2
+        </MDBCardBody>
+      </MDBCard>
+      <MDBCard >
+        <MDBCardBody>
+          Blog post 3
+        </MDBCardBody>
+      </MDBCard>
+      <MDBCard >
+        <MDBCardBody>
+          Blog post 4
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCardGroup>
+  </MDBContainer>
 );
 
 export default BlogFeed;
