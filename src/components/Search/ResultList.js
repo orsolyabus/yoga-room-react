@@ -1,12 +1,16 @@
 import React from 'react';
+import { MDBCard, MDBListGroup, MDBListGroupItem } from "mdbreact";
 
 const ResultList = () => (
   <div className="ResultList">
-   <ul>
-     <li>result class 1 </li>
-     <li>result class 2 </li>
-     <li>result class 3 </li>
-   </ul>
+   <MDBCard >
+    <MDBListGroup>
+      <MDBListGroupItem>result class 1</MDBListGroupItem>
+      <MDBListGroupItem>result class 1</MDBListGroupItem>
+      <MDBListGroupItem>result class 1</MDBListGroupItem>
+    </MDBListGroup>
+  </MDBCard>
+
   </div>
 );
 
