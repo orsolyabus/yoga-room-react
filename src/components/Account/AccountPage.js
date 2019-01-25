@@ -3,7 +3,7 @@ import AccountNav from './AccountNav';
 import { MDBContainer, MDBCard, MDBCardHeader, MDBCardBody } from "mdbreact";
 import Profile from './Profile';
 import Favorites from './Favorites';
-import YogaClassList from './YogaClassList';
+import MyClasses from './MyClasses';
 
 const AccountPage = () => (
   <main className="AccountPage">
@@ -16,7 +16,7 @@ const AccountPage = () => (
         <MDBCardBody>
           <Profile />
           <Favorites />
-          <YogaClassList />
+          <MyClasses />
         </MDBCardBody>
       </MDBCard>
     </MDBContainer>
