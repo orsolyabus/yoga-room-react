@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import LandingPage from '../Landing/LandingPage';
+import SearchPage from '../Search/SearchPage';
+import AccountPage from '../Account/AccountPage';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 import './App.css';
+import NavBar from './NavBar';
+import { BrowserRouter, Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            This is my new Yoga Room
-          </p>
-          
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div className="App">
+      <NavBar />
+      <Route path="/" exact component={LandingPage} />
+      <Route path="/search" exact component={SearchPage} />
+      <Route path="/account" exact component={AccountPage} />
+    </div>
+  </BrowserRouter>
+);
+
 
 export default App;
