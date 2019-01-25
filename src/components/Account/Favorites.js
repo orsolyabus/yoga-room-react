@@ -3,7 +3,7 @@ import {  } from "mdbreact";
 
 const Favorites = () => (
   <div className="Favorites" >
-      <h3>Favorites</h3>
+    <h3>Favorites</h3>
   </div>
 );
 

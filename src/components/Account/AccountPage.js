@@ -8,9 +8,9 @@ import MyClasses from './MyClasses';
 const AccountPage = () => (
   <main className="AccountPage">
     
-    <MDBContainer>
-      <MDBCard style={{ marginTop: "1rem" }}>
-        <MDBCardHeader >
+    <MDBContainer fluid className="pt-3">
+      <MDBCard >
+        <MDBCardHeader className="p-0">
           <AccountNav />
         </MDBCardHeader>
         <MDBCardBody>
