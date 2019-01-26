@@ -1,7 +1,7 @@
 // i18n
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import { MDBNavbar, MDBNavbarBrand, MDBNavItem, MDBNavbarNav, MDBNavLink, MDBCollapse, MDBNavbarToggler} from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavItem, MDBNavbarNav, MDBNavLink, MDBCollapse, MDBNavbarToggler, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle} from "mdbreact";
 
 const NavBar = () => (
   <MDBNavbar color="default-color" dark expand="md">
@@ -14,8 +14,28 @@ const NavBar = () => (
         <MDBNavItem>
           <MDBNavLink exact to="/search">Detailed Search</MDBNavLink>
         </MDBNavItem>
+        
+        <MDBNavItem>
+          <MDBDropdown>
+            <MDBDropdownToggle nav caret>
+            For Teachers
+            </MDBDropdownToggle>
+            <MDBDropdownMenu className="" right>
+              <MDBDropdownItem>What's in it for you?</MDBDropdownItem>
+              <MDBDropdownItem>Are you a Studio?</MDBDropdownItem>
+              <MDBDropdownItem></MDBDropdownItem>
+              <MDBDropdownItem divider />
+              <MDBDropdownItem>Register</MDBDropdownItem>
+            </MDBDropdownMenu>
+          </MDBDropdown>
+        </MDBNavItem>
+      </MDBNavbarNav>
+      <MDBNavbarNav right className="white-text">
         <MDBNavItem>
           <MDBNavLink exact to="/account">Account</MDBNavLink>
+        </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink to="#">Log in</MDBNavLink>
         </MDBNavItem>
       </MDBNavbarNav>
     </MDBCollapse>

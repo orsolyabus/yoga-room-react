@@ -10,7 +10,7 @@ const AccountNav = () => (
         <MDBBtn color="primary">Profile</MDBBtn> 
         <MDBBtn color="primary">My classes</MDBBtn>
         <MDBBtn color="primary">Favorites</MDBBtn>
-        <MDBBtn color="primary">Blog</MDBBtn>
+        <MDBBtn color="primary">Posts</MDBBtn>
       </MDBNavbarNav>
     </MDBCollapse>
   </MDBNavbar>
