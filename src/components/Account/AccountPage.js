@@ -6,7 +6,7 @@ import Favorites from './Favorites';
 import MyClasses from './MyClasses';
 
 const AccountPage = () => (
-  <main className="AccountPage">
+  <main className="AccountPage content">
     
     <MDBContainer fluid className="pt-3">
       <MDBCard >

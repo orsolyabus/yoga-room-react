@@ -5,7 +5,7 @@ import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
 
 const Results = () => (
   <MDBContainer fluid className="Results pt-3">
-    <MDBRow>
+    <MDBRow className="content">
       <MDBCol>
         <ResultList />
       </MDBCol>    

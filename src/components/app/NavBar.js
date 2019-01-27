@@ -20,7 +20,7 @@ const NavBar = () => (
             <MDBDropdownToggle nav caret>
             For Teachers
             </MDBDropdownToggle>
-            <MDBDropdownMenu className="" right>
+            <MDBDropdownMenu className="" >
               <MDBDropdownItem>What's in it for you?</MDBDropdownItem>
               <MDBDropdownItem>Are you a Studio?</MDBDropdownItem>
               <MDBDropdownItem></MDBDropdownItem>

@@ -4,7 +4,7 @@ import { MDBContainer, MDBCard, MDBCardBody, MDBCardGroup } from "mdbreact";
 
 const BlogFeed = () => (
   <MDBContainer fluid className="BlogFeed p-4">
-    <MDBCardGroup  deck> 
+    <MDBCardGroup  deck className="content"> 
       <MDBCard >
         <MDBCardBody>
           Blog post 1
