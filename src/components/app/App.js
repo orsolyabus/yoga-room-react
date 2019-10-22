@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LandingPage from '../Landing/LandingPage';
 import SearchPage from '../Search/SearchPage';
 import AccountPage from '../Account/AccountPage';

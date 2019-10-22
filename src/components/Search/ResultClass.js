@@ -12,7 +12,6 @@ const ResultClass = () => (
       </MDBCol>
       <MDBCol>
         <h6>book online spots: 5/12</h6>
-        <h6></h6>
       </MDBCol>
     </MDBRow>
     
