@@ -1,22 +1,22 @@
 import React from 'react';
-import { MDBCard, MDBListGroup, MDBListGroupItem } from "mdbreact";
+import { Card, ListGroup } from "react-bootstrap";
 import ResultClass from './ResultClass';
 
 const ResultList = () => (
   <div className="ResultList">
-   <MDBCard >
-    <MDBListGroup>
-      <MDBListGroupItem>
+   <Card >
+    <ListGroup>
+      <ListGroup.Item>
         <ResultClass />
-      </MDBListGroupItem>
-      <MDBListGroupItem>
+      </ListGroup.Item>
+      <ListGroup.Item>
         <ResultClass />
-      </MDBListGroupItem>
-      <MDBListGroupItem>
+      </ListGroup.Item>
+      <ListGroup.Item>
         <ResultClass />
-      </MDBListGroupItem>
-    </MDBListGroup>
-  </MDBCard>
+      </ListGroup.Item>
+    </ListGroup>
+  </Card>
 
   </div>
 );

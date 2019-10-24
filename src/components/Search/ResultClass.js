@@ -1,19 +1,19 @@
 import React from 'react';
-import { MDBCol, MDBRow } from "mdbreact";
+import { Col, Row } from "react-bootstrap";
 
 const ResultClass = () => (
   <div className="ResultClass">
     <h4>Title</h4>
-    <MDBRow>
-      <MDBCol>        
+    <Row>
+      <Col>        
         <h6>location</h6>
         <h6>Teacher</h6>
         <h6>time</h6>
-      </MDBCol>
-      <MDBCol>
+      </Col>
+      <Col>
         <h6>book online spots: 5/12</h6>
-      </MDBCol>
-    </MDBRow>
+      </Col>
+    </Row>
     
   </div>
 );

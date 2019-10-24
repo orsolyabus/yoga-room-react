@@ -1,19 +1,19 @@
 import React from 'react';
-import { MDBNavbar, MDBNavbarNav, MDBBtn, MDBCollapse, MDBNavbarToggler } from "mdbreact";
+import { Navbar, Nav, Button } from "react-bootstrap";
 
 const AccountNav = () => (
   <div className="AccountNav">
-  <MDBNavbar color="default-color" dark expand="md">
-    <MDBNavbarToggler />
-      <MDBCollapse id="navbarCollapse3" isOpen={true} navbar>
-      <MDBNavbarNav left className="white-text">
-        <MDBBtn color="primary">Profile</MDBBtn> 
-        <MDBBtn color="primary">My classes</MDBBtn>
-        <MDBBtn color="primary">Favorites</MDBBtn>
-        <MDBBtn color="primary">Posts</MDBBtn>
-      </MDBNavbarNav>
-    </MDBCollapse>
-  </MDBNavbar>
+  <Navbar color="default-color" dark expand="md">
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="navbarCollapse3" isOpen={true} navbar>
+      <Nav left className="white-text">
+        <Button color="primary">Profile</Button> 
+        <Button color="primary">My classes</Button>
+        <Button color="primary">Favorites</Button>
+        <Button color="primary">Posts</Button>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
   </div>
 );
 

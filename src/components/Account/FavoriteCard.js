@@ -1,18 +1,18 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCardText, MDBCardTitle } from "mdbreact";
+import { Card } from "react-bootstrap";
 
 const FavoriteCard = () => (
   <div className="FavoriteCard" >
-      <MDBCard>
-        <MDBCardBody>
-          <MDBCardTitle tag="h5">Panel title</MDBCardTitle>
-          <MDBCardText>
+      <Card>
+        <Card.Body>
+          <Card.Title tag="h5">Panel title</Card.Title>
+          <Card.Text>
             This is a wider panel with supporting text below as a natural
             lead-in to additional content. This content is a little bit
             longer.
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
+          </Card.Text>
+        </Card.Body>
+      </Card>
   </div>
 );
 

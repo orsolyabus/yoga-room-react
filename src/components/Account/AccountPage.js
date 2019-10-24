@@ -1,6 +1,6 @@
 import React from 'react';
 import AccountNav from './AccountNav';
-import { MDBContainer, MDBCard, MDBCardHeader, MDBCardBody } from "mdbreact";
+import { Container, Card } from "react-bootstrap";
 import Profile from './Profile';
 import Favorites from './Favorites';
 import MyClasses from './MyClasses';
@@ -8,18 +8,18 @@ import MyClasses from './MyClasses';
 const AccountPage = () => (
   <main className="AccountPage content">
     
-    <MDBContainer fluid className="pt-3">
-      <MDBCard >
-        <MDBCardHeader className="p-0">
+    <Container fluid className="pt-3">
+      <Card >
+        <Card.Header className="p-0">
           <AccountNav />
-        </MDBCardHeader>
-        <MDBCardBody>
+        </Card.Header>
+        <Card.Body>
           <Profile />
           <Favorites />
           <MyClasses />
-        </MDBCardBody>
-      </MDBCard>
-    </MDBContainer>
+        </Card.Body>
+      </Card>
+    </Container>
   </main>
 );
 

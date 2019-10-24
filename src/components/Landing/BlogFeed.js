@@ -1,32 +1,32 @@
 // i18n
 import React from 'react';
-import { MDBContainer, MDBCard, MDBCardBody, MDBCardGroup } from "mdbreact";
+import { Container, Card, CardGroup } from "react-bootstrap";
 
 const BlogFeed = () => (
-  <MDBContainer fluid className="BlogFeed p-4">
-    <MDBCardGroup  deck className="content"> 
-      <MDBCard >
-        <MDBCardBody>
+  <Container fluid className="BlogFeed p-4">
+    <CardGroup  deck className="content"> 
+      <Card >
+        <Card.Body>
           Blog post 1
-        </MDBCardBody>
-      </MDBCard>
-      <MDBCard >
-        <MDBCardBody>
+        </Card.Body>
+      </Card>
+      <Card >
+        <Card.Body>
           Blog post 2
-        </MDBCardBody>
-      </MDBCard>
-      <MDBCard >
-        <MDBCardBody>
+        </Card.Body>
+      </Card>
+      <Card >
+        <Card.Body>
           Blog post 3
-        </MDBCardBody>
-      </MDBCard>
-      <MDBCard >
-        <MDBCardBody>
+        </Card.Body>
+      </Card>
+      <Card >
+        <Card.Body>
           Blog post 4
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCardGroup>
-  </MDBContainer>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+  </Container>
 );
 
 export default BlogFeed;

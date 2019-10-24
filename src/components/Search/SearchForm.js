@@ -1,28 +1,31 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact";
+import { Container, Row, Col, Form } from "react-bootstrap";
 
 const SearchForm = () => (
-  <MDBContainer fluid className="SearchForm">
+  <Container fluid className="SearchForm">
     <form action="" className="white-text">
-      <MDBRow className="content">
-        <MDBCol>
-          <MDBInput label="Keyword" type="text" className="white-text" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-        </MDBCol>
-        <MDBCol>
-          <MDBInput label="Filled-in unchecked" type="checkbox" id="checkbox1" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-        </MDBCol>
-        <MDBCol>
-          <MDBInput label="Keyword" type="text" className="white-text" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-          <MDBInput label="Keyword" type="text" className="white-text" />
-        </MDBCol>
-      </MDBRow>
+      <Row className="content">
+        <Col>
+          <Form.Control placeholder="First name" />
+        </Col>
+        <Col>
+          <Form.Control placeholder="First name" />
+        </Col>
+        <Col>
+          <Form.Check
+            type='checkbox'
+            id={`default-$'checkbox'`}
+            label={`default $'checkbox'`}
+          />
+          <Form.Check
+            type='radio'
+            id={`default-$'radio'`}
+            label={`default $'radio'`}
+          />
+        </Col>
+      </Row>
     </form>
-  </MDBContainer>
+  </Container>
 );
 
 export default SearchForm;

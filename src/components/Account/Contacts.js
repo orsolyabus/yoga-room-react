@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn  } from "mdbreact";
+import { Button  } from "react-bootstrap";
 
 const Contacts = () => (
   <div className="Contacts" >
@@ -8,9 +8,9 @@ const Contacts = () => (
     <p>e-mail address</p>
     <p>web</p>
     <p>yoga styles:<br/>
-      <MDBBtn color="secondary" className="yoga-style-pill">Yin</MDBBtn>
-      <MDBBtn color="secondary" className="yoga-style-pill">Hatha</MDBBtn>
-      <MDBBtn color="secondary" className="yoga-style-pill">Kundalini</MDBBtn>
+      <Button color="secondary" className="yoga-style-pill">Yin</Button>
+      <Button color="secondary" className="yoga-style-pill">Hatha</Button>
+      <Button color="secondary" className="yoga-style-pill">Kundalini</Button>
     </p>
     <p>13 classes at 5 locations</p>
   </div>

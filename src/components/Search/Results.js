@@ -1,19 +1,19 @@
 import React from 'react';
 import ResultList from './ResultList';
 import Map from './Map';
-import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
+import { Container, Col, Row } from "react-bootstrap";
 
 const Results = () => (
-  <MDBContainer fluid className="Results pt-3">
-    <MDBRow className="content">
-      <MDBCol>
+  <Container fluid className="Results pt-3">
+    <Row className="content">
+      <Col>
         <ResultList />
-      </MDBCol>    
-      <MDBCol>
+      </Col>    
+      <Col>
         <Map />
-      </MDBCol>
-    </MDBRow>
-  </MDBContainer>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default Results;
