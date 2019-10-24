@@ -1,11 +1,11 @@
 import React from 'react';
-import { MDBCard } from "mdbreact";
+import { Card } from "react-bootstrap";
 
 const Map = () => (
   <div className="Map">
-  <MDBCard>
+  <Card>
     <img src="https://developers.google.com/maps/documentation/urls/images/map-no-params.png" className="img-fluid" alt="" />
-  </MDBCard>
+  </Card>
   </div>
 );
 

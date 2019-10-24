@@ -1,11 +1,11 @@
 import React from 'react';
-import { MDBCardGroup } from "mdbreact";
+import { CardGroup } from "react-bootstrap";
 import FavoriteCard from './FavoriteCard';
 
 const Favorites = () => (
   <div className="Favorites" >
     <h3>Favorites</h3>
-    <MDBCardGroup column>
+    <CardGroup column>
       <FavoriteCard />
       <FavoriteCard />
       <FavoriteCard />
@@ -15,7 +15,7 @@ const Favorites = () => (
       <FavoriteCard />
       <FavoriteCard />
       <FavoriteCard />
-    </MDBCardGroup>
+    </CardGroup>
   </div>
 );
 // szinekkel vagy massal megkulonboztetni a postot orat tanart helyszint

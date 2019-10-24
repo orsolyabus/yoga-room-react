@@ -1,15 +1,15 @@
 // i18n
 import React from 'react';
-import { MDBCard, MDBListGroupItem, MDBListGroup } from "mdbreact";
+import { Card, ListGroup } from "react-bootstrap";
 
 const NewClassesFeed = () => (
   <div className="NewClassesFeed col-4">
-    <MDBCard>
-      <MDBListGroup>
-        <MDBListGroupItem>New class 1 </MDBListGroupItem>
-        <MDBListGroupItem>New class 2 </MDBListGroupItem>
-      </MDBListGroup>
-    </MDBCard>
+    <Card>
+      <ListGroup>
+        <ListGroup.Item>New class 1 </ListGroup.Item>
+        <ListGroup.Item>New class 2 </ListGroup.Item>
+      </ListGroup>
+    </Card>
   </div>
 );
 

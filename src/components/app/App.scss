@@ -1,0 +1,55 @@
+$primary:       #C55E65 !default;
+$secondary:     #CC9773 !default;
+$success:       #709656 !default;
+$info:          #8F7673 !default;
+$warning:       #ee861e !default;
+$danger:        #f44336 !default;
+$light:         #F3F0F1 !default;
+$dark:          #512324 !default;
+
+ $theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+.body {
+ 
+}
+
+.page {
+  /* text-align: center;
+  display: flex;
+  justify-content: center; */
+}
+.content {
+  margin: 0 auto;
+  max-width: 1500px;
+  /* max-width: 73.125rem; */
+}
+.nav-background{
+  background-color: aqua
+}
+.profile-pic {
+  text-align: center;
+  max-height: 400px;
+}
+.yoga-style-pill{
+  padding: 0.5rem 1.07rem;
+  border-radius: 1.5rem;
+}
+.YogaClassList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.YogaClassCard {
+  margin: 1rem 0 ;
+}

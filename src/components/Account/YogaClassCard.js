@@ -1,21 +1,21 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBRow, MDBCol, MDBCardText, MDBCardTitle } from "mdbreact";
+import { Card } from "react-bootstrap";
 
 const YogaClassCard = () => (
   <div className="YogaClassCard" >
-      <MDBCard>
-        <MDBCardBody>
-          <MDBCardTitle tag="h5">Panel title</MDBCardTitle>
-          <MDBCardText>
+      <Card>
+        <Card.Body>
+          <Card.Title tag="h5">Panel title</Card.Title>
+          <Card.Text>
             This is a wider panel with supporting text below as a natural
             lead-in to additional content. This content is a little bit
             longer.
-          </MDBCardText>
-          <MDBCardText small muted>
+          </Card.Text>
+          <Card.Text small muted>
             Last updated 3 mins ago
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
+          </Card.Text>
+        </Card.Body>
+      </Card>
   </div>
 );
 

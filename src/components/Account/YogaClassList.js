@@ -1,5 +1,5 @@
 import React from 'react';
-import {  } from "mdbreact";
+import {  } from "react-bootstrap";
 import YogaClassCard from './YogaClassCard';
 
 const YogaClassList = () => (

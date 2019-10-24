@@ -1,25 +1,35 @@
 // i18n
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import { MDBNavbar, MDBNavbarBrand, MDBNavItem, MDBNavbarNav, MDBNavLink, MDBCollapse, MDBNavbarToggler} from "mdbreact";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const NavBar = () => (
-  <MDBNavbar color="default-color" dark expand="md">
-    <MDBNavbarBrand>
-      <NavLink exact to="/" className="white-text">Yoga Room</NavLink> 
-    </MDBNavbarBrand>
-    <MDBNavbarToggler />
-    <MDBCollapse id="navbarCollapse3" isOpen={true} navbar>
-      <MDBNavbarNav left className="white-text">
-        <MDBNavItem>
-          <MDBNavLink exact to="/search">Detailed Search</MDBNavLink>
-        </MDBNavItem>
-        <MDBNavItem>
-          <MDBNavLink exact to="/account">Account</MDBNavLink>
-        </MDBNavItem>
-      </MDBNavbarNav>
-    </MDBCollapse>
-  </MDBNavbar>
+  <Navbar bg="dark" variant="dark" expand="md">
+    <Navbar.Brand href="/">
+      Yoga Room
+    </Navbar.Brand>
+    <Navbar.Toggle />
+    <Navbar.Collapse id="navbarCollapse3" isOpen={true} navbar>
+      <Nav left className="white-text">
+        <Nav.Link href="/search">Detailed Search</Nav.Link>
+        <NavDropdown title="For Teachers">
+          <NavDropdown.Item>What's in it for you?</NavDropdown.Item>
+          <NavDropdown.Item>Are you a Studio?</NavDropdown.Item>
+          <NavDropdown.Item></NavDropdown.Item>
+          <NavDropdown.Item divider />
+          <NavDropdown.Item>Register</NavDropdown.Item>
+        </NavDropdown>
+
+      </Nav>
+      <Nav right className="white-text">
+
+        <Nav.Link href="/account">Account</Nav.Link>
+
+
+        <Nav.Link to="#">Log in</Nav.Link>
+
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 );
 
 export default NavBar;
