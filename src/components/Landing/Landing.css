@@ -3,9 +3,9 @@
 }
 
 .LandingClasses {
-  background-color: lightgrey
+  background-color: var(--light)
 }
 
 .BlogFeed{
-  background-color: antiquewhite
+  background-color: var(--secondary)
 }

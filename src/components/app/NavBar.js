@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const NavBar = () => (
-  <Navbar color="default-color" dark expand="md">
+  <Navbar bg="dark" variant="dark" expand="md">
     <Navbar.Brand href="/">
       Yoga Room
     </Navbar.Brand>
