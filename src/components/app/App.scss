@@ -20,6 +20,10 @@ $dark:          #512324 !default;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .body {
  
 }
