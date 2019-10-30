@@ -24,8 +24,8 @@ $dark:          #512324 !default;
   font-family: 'Montserrat', sans-serif;
 }
 
-.body {
- 
+body {
+  background-color: var(--light)
 }
 
 .page {
@@ -56,4 +56,12 @@ $dark:          #512324 !default;
 }
 .YogaClassCard {
   margin: 1rem 0 ;
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+h2{
+  font-size: 1.75rem;
 }

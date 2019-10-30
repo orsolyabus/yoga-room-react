@@ -1,9 +1,10 @@
-.LandingWelcome {
-  background-color: var(--info)
+.SimpleSearch {
+  display: flex;
+  justify-content: center;
 }
 
-.LandingClasses {
-  background-color: var(--light)
+.simpleForm{
+  width: 500px;
 }
 
 .BlogFeed{
