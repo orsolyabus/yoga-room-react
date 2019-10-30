@@ -5,12 +5,10 @@ import './Landing.css'
 import Container from "react-bootstrap/Container";
 
 const LandingPage = () => (
-  <main className="LandingPage">
-    <Container className="transparent">
-      <LandingWelcome />
-      <LandingTeacher />
-    </Container>
-  </main>
+  <Container className="transparent">
+    <LandingWelcome />
+    <LandingTeacher />
+  </Container>
 );
 
 export default LandingPage;
