@@ -12,7 +12,7 @@ const NavBar = () => (
         <Nav.Link href="/search">Search Classes</Nav.Link>
         
         <NavDropdown title="Browse">
-          <NavDropdown.Item>Teachers</NavDropdown.Item>
+          <NavDropdown.Item href="/teachers">Teachers</NavDropdown.Item>
           <NavDropdown.Item>Locations</NavDropdown.Item>
         </NavDropdown>
         
