@@ -16,7 +16,7 @@ const NavBar = () => (
           <NavDropdown.Item>Locations</NavDropdown.Item>
         </NavDropdown>
         
-        <Nav.Link href="/account">Contact</Nav.Link>
+        <Nav.Link href="/contact">Contact</Nav.Link>
         
         <NavDropdown title="For Teachers" disabled>
           <NavDropdown.Item>What's in it for you?</NavDropdown.Item>
@@ -28,7 +28,7 @@ const NavBar = () => (
       </Nav>
       
       <Nav className="white-text ml-auto">
-        <Nav.Link href="/account">My page</Nav.Link>
+        <Nav.Link href="/profile">My page</Nav.Link>
         <Nav.Link to="#">Log in</Nav.Link>
 
       </Nav>
