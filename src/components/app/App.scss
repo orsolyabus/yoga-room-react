@@ -20,6 +20,15 @@ $dark:          #512324 !default;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+@media (min-width: 1500px) { 
+  .container {
+    min-width: 1350px;
+  }
+  .footer {
+    max-width: 1350px;
+  }
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
