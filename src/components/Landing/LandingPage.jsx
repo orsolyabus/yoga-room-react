@@ -1,15 +1,14 @@
 import React from 'react';
 import LandingWelcome from './LandingWelcome';
-import LandingClasses from './LandingClasses';
-import BlogFeed from './BlogFeed';
+import LandingTeacher from './LandingTeacher';
 import './Landing.css'
+import Container from "react-bootstrap/Container";
 
 const LandingPage = () => (
-  <main className="LandingPage">
+  <Container className="transparent">
     <LandingWelcome />
-    <LandingClasses />
-    <BlogFeed />
-  </main>
+    <LandingTeacher />
+  </Container>
 );
 
 export default LandingPage;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Button } from "react-bootstrap";
 
-const AccountNav = () => (
-  <div className="AccountNav">
+const ProfileNav = () => (
+  <div className="ProfileNav">
   <Navbar color="default-color" dark expand="md">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="navbarCollapse3" isOpen={true} navbar>
@@ -17,4 +17,4 @@ const AccountNav = () => (
   </div>
 );
 
-export default AccountNav;
+export default ProfileNav;

@@ -1,17 +1,17 @@
 import React from 'react';
-import AccountNav from './AccountNav';
+import ProfileNav from './ProfileNav';
 import { Container, Card } from "react-bootstrap";
 import Profile from './Profile';
 import Favorites from './Favorites';
 import MyClasses from './MyClasses';
 
-const AccountPage = () => (
-  <main className="AccountPage content">
+const ProfilePage = () => (
+  <main className="ProfilePage content">
     
     <Container fluid className="pt-3">
       <Card >
         <Card.Header className="p-0">
-          <AccountNav />
+          <ProfileNav />
         </Card.Header>
         <Card.Body>
           <Profile />
@@ -23,4 +23,4 @@ const AccountPage = () => (
   </main>
 );
 
-export default AccountPage;
+export default ProfilePage;
