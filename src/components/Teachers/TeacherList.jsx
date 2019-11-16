@@ -12,6 +12,7 @@ const TeachersList = () => {
     Teacher.all().then(Ts => {
       setTeachers(Ts)
       setLoading(false)
+      console.log(Ts[0])
     })
   }, []);
   if (loading) return (
