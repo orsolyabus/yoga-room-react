@@ -7,14 +7,10 @@ const NavBar = () => (
       YogaRoom
     </Navbar.Brand>
     <Navbar.Toggle />
-    <Navbar.Collapse id="navbarCollapse3" isOpen={true} navbar>
+    <Navbar.Collapse id="navbarCollapse3" >
       <Nav className="white-text mr-auto">
         <Nav.Link href="/search">Search Classes</Nav.Link>
-        
-        <NavDropdown title="Browse">
-          <NavDropdown.Item href="/teachers">Teachers</NavDropdown.Item>
-          <NavDropdown.Item>Locations</NavDropdown.Item>
-        </NavDropdown>
+        <Nav.Link href="/teachers">Teachers</Nav.Link>
         
         <Nav.Link href="/contact">Contact</Nav.Link>
         
@@ -22,7 +18,6 @@ const NavBar = () => (
           <NavDropdown.Item>What's in it for you?</NavDropdown.Item>
           <NavDropdown.Item>Are you a Studio?</NavDropdown.Item>
           <NavDropdown.Item></NavDropdown.Item>
-          <NavDropdown.Item divider />
           <NavDropdown.Item>Register</NavDropdown.Item>
         </NavDropdown>
       </Nav>

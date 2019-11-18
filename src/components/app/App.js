@@ -6,7 +6,7 @@ import TeachersPage from '../Teachers/TeachersPage'
 // import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import NavBar from './NavBar';
+import NavBar from './NavBar.jsx';
 import Footer from './Footer';
 import { BrowserRouter, Route } from "react-router-dom";
 
