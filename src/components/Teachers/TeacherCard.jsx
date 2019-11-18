@@ -6,23 +6,24 @@ const TeacherCard = (props) => {
   const { teacher } = props;
   return (
     <Card className="shadow-sm mb-4" >
-      <Card.Img variant="top" src="example.jpg" />
+      <Card.Img variant="top" src={teacher.image_url || "example.jpg"} />
       <Card.Body>
         <Card.Title>{teacher.name}</Card.Title>
-        <Card.Text>{teacher.info.introduction}</Card.Text>
-        <Badge pill variant="primary" className="mx-1">
+        <Card.Text>{teacher.intro}</Card.Text>
+        {/* <Badge pill variant="primary" className="mx-1">
           yin
-      </Badge>
+        </Badge>
         <Badge pill variant="primary" className="mx-1">
           hatha
-      </Badge>
+        </Badge>
         <Badge pill variant="primary" className="mx-1">
           kundalini
-      </Badge>
+        </Badge> */}
 
       </Card.Body>
       <Card.Footer>
-        5 classes at 3 locations
+        {teacher.class_count} classes 
+        {/* at N locations */}
     </Card.Footer>
     </Card>
   );
