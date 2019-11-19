@@ -1,19 +1,27 @@
 import React from 'react';
 import ResultList from './ResultList';
 import Map from './Map';
-import { Container, Col, Row } from "react-bootstrap";
+import { Card, Nav, Button } from "react-bootstrap";
 
 const Results = () => (
-  <Container fluid className="Results pt-3">
-    <Row className="content">
-      <Col>
-        <ResultList />
-      </Col>    
-      <Col>
-        <Map />
-      </Col>
-    </Row>
-  </Container>
+  <Card >
+    <Card.Header className="result-nav">
+      <Nav variant="tabs" defaultActiveKey="#first">
+        <Nav.Item>
+          <Nav.Link href="#first">List</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#link" disabled>Map</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </Card.Header>
+    <Card.Body>
+      <Card.Title>Yoga Classes</Card.Title>
+      <Card.Text>
+        <ResultList/>
+      </Card.Text>
+    </Card.Body>
+  </Card>
 );
 
 export default Results;

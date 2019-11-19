@@ -1,23 +1,17 @@
 import React from 'react';
-import { Card, ListGroup } from "react-bootstrap";
+import { Card, ListGroup, CardColumns } from "react-bootstrap";
 import ResultClass from './ResultClass';
 
 const ResultList = () => (
   <div className="ResultList">
-   <Card >
-    <ListGroup>
-      <ListGroup.Item>
-        <ResultClass />
-      </ListGroup.Item>
-      <ListGroup.Item>
-        <ResultClass />
-      </ListGroup.Item>
-      <ListGroup.Item>
-        <ResultClass />
-      </ListGroup.Item>
-    </ListGroup>
-  </Card>
-
+    <CardColumns className="result-list">
+      <ResultClass />
+      <ResultClass />
+      <ResultClass />
+      <ResultClass />
+      <ResultClass />
+      <ResultClass />
+    </CardColumns>
   </div>
 );
 

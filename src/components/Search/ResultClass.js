@@ -1,21 +1,24 @@
 import React from 'react';
-import { Col, Row } from "react-bootstrap";
+import { Badge, Card } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 
 const ResultClass = () => (
-  <div className="ResultClass">
-    <h4>Title</h4>
-    <Row>
-      <Col>        
+  <Card className="ResultClass shadow-sm">
+    <Card.Body>
+      <Card.Title><Card.Link href="#">Title</Card.Link></Card.Title>
+      <Card.Text>
         <h6>location</h6>
         <h6>Teacher</h6>
         <h6>time</h6>
-      </Col>
-      <Col>
-        <h6>book online spots: 5/12</h6>
-      </Col>
-    </Row>
-    
-  </div>
+        <Badge pill variant="primary" className="mx-1">
+          yin
+        </Badge>
+        <FontAwesomeIcon icon={faCalendar} className="text-warning" />
+        {/* <i class="far fa-calendar text-dark"></i> */}
+      </Card.Text>
+    </Card.Body>
+  </Card>
 );
 
 export default ResultClass;
