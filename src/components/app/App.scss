@@ -1,11 +1,14 @@
 $primary:       #C55E65 !default;
-$secondary:     #CC9773 !default;
+// $secondary:     #CC9773 !default;
+$secondary:     #d4a889 !default;
 $success:       #709656 !default;
 $info:          #8F7673 !default;
 $warning:       #ee861e !default;
 $danger:        #f44336 !default;
 $light:         #F3F0F1 !default;
 $dark:          #512324 !default;
+$medium-light:  darken($light, 10%);
+$super-light:   #faf8f8;
 
  $theme-colors: (
   "primary":    $primary,
@@ -34,7 +37,7 @@ $dark:          #512324 !default;
 }
 
 body {
-  background-color: var(--light)
+  background-color: $light
 }
 
 .content {
@@ -83,5 +86,34 @@ h2{
 }
 
 div.result-nav {
-  background-color: darken($light, 10%); 
+  background-color: $medium-light; 
+}
+
+div.results {
+  background-color: $super-light;
+}
+
+.results a.nav-link.active{
+  background-color: $super-light;
+  border-color: $medium-light $medium-light $super-light;
+}
+
+.form-control, .card, .card-footer, .card-header, .custom-control-label::before {
+  border-color: $medium-light;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 11px;
+}
+
+.badge {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.badge-secondary-light {
+  background-color: theme-color-level(secondary, -3);;
 }
