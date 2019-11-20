@@ -1,7 +1,8 @@
 import React from 'react';
 import ResultList from './ResultList';
-import Map from './Map';
-import { Card, Nav, Button } from "react-bootstrap";
+import { Card, Nav, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendar, faCalendarAlt, faCalendarPlus } from '@fortawesome/free-regular-svg-icons'
 
 const Results = () => (
   <Card >
@@ -16,9 +17,31 @@ const Results = () => (
       </Nav>
     </Card.Header>
     <Card.Body>
-      <Card.Title>Yoga Classes</Card.Title>
+      <Card.Title>
+        <Row>
+          <Col>
+            Yoga Classes
+          </Col>
+          <Col md="auto">
+            <small>
+              <span className="mr-2">
+                <FontAwesomeIcon icon={faCalendar} className="text-dark mx-2" />
+                regular weekly class
+              </span>
+              <span className="mr-2">
+                <FontAwesomeIcon icon={faCalendarAlt} className="text-warning mx-2" />
+                limited length course
+              </span>
+              <span>
+                <FontAwesomeIcon icon={faCalendarPlus} className="text-success mx-2" />
+                workshop
+              </span>
+            </small>
+          </Col>
+        </Row>
+      </Card.Title>
       <Card.Text>
-        <ResultList/>
+        <ResultList />
       </Card.Text>
     </Card.Body>
   </Card>

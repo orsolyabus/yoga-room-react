@@ -14,8 +14,7 @@ const ResultClass = () => (
         <Badge pill variant="primary" className="mx-1">
           yin
         </Badge>
-        <FontAwesomeIcon icon={faCalendar} className="text-warning" />
-        {/* <i class="far fa-calendar text-dark"></i> */}
+        <FontAwesomeIcon icon={faCalendar} className="text-dark" />
       </Card.Text>
     </Card.Body>
   </Card>

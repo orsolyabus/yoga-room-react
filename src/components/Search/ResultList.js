@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, ListGroup, CardColumns } from "react-bootstrap";
+import { CardColumns } from "react-bootstrap";
 import ResultClass from './ResultClass';
 
 const ResultList = () => (
