@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Navbar } from "react-bootstrap";
 
 const Footer = () => (
-  <div className="sticky-bottom bg-dark text-white mt-2 py-2" >
+  <div className="sticky-bottom bg-dark text-white py-2" >
     <Nav justify className="mx-auto flex-column flex-sm-row footer" >
       <Nav.Item >
         <Navbar.Text>Contact: </Navbar.Text>

@@ -9,7 +9,7 @@ const NavBar = () => (
     <Navbar.Toggle />
     <Navbar.Collapse id="navbarCollapse3" >
       <Nav className="white-text mr-auto">
-        <Nav.Link href="/search">Search Classes</Nav.Link>
+        <Nav.Link href="/search">Classes</Nav.Link>
         <Nav.Link href="/teachers">Teachers</Nav.Link>
         
         <Nav.Link href="/contact">Contact</Nav.Link>

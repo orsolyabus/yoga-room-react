@@ -1,7 +1,6 @@
 import React from 'react';
 import SearchForm from './SearchForm';
 import Results from './Results';
-import './Search.scss'
 import { Container, Col, Row } from 'react-bootstrap';
 
 const SearchPage = () => (
