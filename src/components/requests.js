@@ -6,3 +6,10 @@ export const Teacher = {
     }).then(res => res.json());
   }
 };
+
+export const YogaClass = {
+  all() {
+    return fetch(`${BASE_URL}/yoga_classes`, {
+    }).then(res => res.json());
+  }
+}
